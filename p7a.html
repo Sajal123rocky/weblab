@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <span>Enter Name:</span>
+        <input type="text" pattern="[A-Za-z]+" required><br>
+        <span>Enter email:</span>
+        <input type="email" required><br>
+        <span>Enter phone:</span>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        <span>Enter sem:</span>
+        <input type="number" min="1" max="8" required><br>
+        <span>Branch:</span>
+        <input type="text" placeholder="choose a branch" list="branches" required>
+        <datalist id="branches">
+            <option value="cse"></option>
+            <option value="ise"></option>
+            <option value="me"></option>
+            <option value="ece"></option>
+        </datalist><br>
+        <span>Website:</span>
+        <input type="url" pattern="https?://.+" required><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
