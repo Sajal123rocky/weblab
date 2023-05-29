@@ -5,41 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
 </head>
 <body>
-    <h1>hello</h1>
-    <p id="res"></p>
-    <script>
-        
-        function vowelCount(input){
-           
-           
-                const vowelfreq={'a':0,'e':0,'i':0,'o':0,'u':0};
-                let count=0;
-                const res=input.toLowerCase();
-                for(let i=0;i<input.length;i++)
-                {
-                    let c=res.charAt(i);
-                    if('aeiou'.includes(c)){
-                    if(vowelfreq[c])
-                    vowelfreq[c]++;
-                    else
-                    vowelfreq[c]=1;
-                    }
-                }
-                alert(vowelfreq);
-                for(let vowel in vowelfreq)
-                {
-                alert(vowel+" "+vowelfreq[vowel]);
-
-                }
-                
-            
-            
-        }
-        let input=prompt("Enter a string");
-        vowelCount(input);
-            </script>
+    <h1>Welcome</h1>
+    <a href="/insert.html">insert</a><br>
+    <a href="/update.html">update</a><br>
+    <a href="/delete.html">delete</a><br>
+    <a href="/serach.html">search</a><br>
+    <a href="/display">display</a><br>
+    <a href="/delete">delete no fees</a><br>
+    <a href="/displaySgrade">displaySgrade</a><br>
 </body>
 </html>
